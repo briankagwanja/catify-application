@@ -1,0 +1,75 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (min-width: 37.5em) {
+      @content;
+    }
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tabPort {
+    @media (min-width: 56.25em) {
+      @content;
+    }
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  box-sizing: inherit;
+}
+
+.anime {
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__pic {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__description {
+    // width: 75%;
+  }
+
+  &__image {
+    background-size: cover;
+    min-height: 75%;
+    width: 80%;
+  }
+
+  &__info {
+    font-size: 1.8rem;
+  }
+}
+
+.btn {
+  font-size: 1.4rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  cursor: pointer;
+  background-color: aqua;
+  border-radius: 10px;
+  transition: all 0.1s;
+
+  &:active {
+    outline: none;
+    transform: translateY(-0.1rem);
+  }
+}

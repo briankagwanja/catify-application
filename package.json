@@ -1,0 +1,18 @@
+{
+  "name": "anime",
+  "version": "1.0.0",
+  "description": "animals",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [
+    "animals"
+  ],
+  "author": "Brian",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0",
+    "parcel": "^2.11.0"
+  }
+}
